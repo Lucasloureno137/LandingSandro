@@ -1,7 +1,8 @@
 # exemplo deu um netlify.toml
-build:
-  command: npm run build
-  publish: build
+[build]
+  command = "vite build"
+  functions = "netlify/functions"
+  publish = "dist"
 
 # Redirecionamento de todas as rotas para /index.html
 [[redirects]]
