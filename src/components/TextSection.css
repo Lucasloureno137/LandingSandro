@@ -1,0 +1,86 @@
+
+.text-section {
+  background-color: #f9f9f9; 
+  padding: 2rem;
+  min-height: 50vh; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; 
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.text-left {
+  flex: 1;
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: rgb(161, 135, 110); 
+  text-align: left;
+}
+
+.text-right {
+  flex: 1;
+  margin-left: 1rem;
+  font-size: 1.2rem; 
+  color: #666; 
+  text-align: justify; 
+}
+
+.icon-texts {
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start; 
+  max-width: 1200px; 
+  width: 100%;
+  gap: 2rem; 
+  margin-top: 2rem;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 0.5rem; 
+  text-align: center; 
+}
+
+.icon {
+  width: 40px; 
+  height: 40px; 
+}
+
+.icon-text-content {
+  font-size: 1rem; 
+  color: #333; 
+}
+
+
+@media (max-width: 768px) {
+  .text-container {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .text-left, .text-right {
+    margin: 0; 
+    font-size: 1.5rem; 
+  }
+
+  .icon-texts {
+    flex-direction: column; 
+    gap: 1rem; 
+  }
+
+  .icon-text {
+    gap: 1rem; 
+  }
+}
