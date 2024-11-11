@@ -27,7 +27,10 @@ const App: React.FC = () => {
       <TextSection /> 
 
       <footer>
-        <p>© 2024 Advogados. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Advogados. Todos os direitos reservados.</p>
+        <p>Rua dos Advogados, 123, Cidade - Estado</p>
+        <p>Telefone: (XX) XXXX-XXXX | Email: contato@advocacia.com</p> 
+        <a href="https://cdn.forms-content-1.sg-form.com/6816f5c0-a077-11ef-abed-9699e2e7938e">assa</a>
       </footer>
     </div>
   );
