@@ -6,7 +6,7 @@ const slides = [
   {
     title: "Direito Trabalhista",
     description: "Auxiliamos em casos de rescisões e direitos no ambiente de trabalho.",
-    image: "/images/trabalhista.jpg",
+    image: "/assets/trabalhista.jpg",
   },
   {
     title: "Direito Civil",
