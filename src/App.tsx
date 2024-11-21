@@ -14,7 +14,7 @@ const App: React.FC = () => {
         <div className="text-above-buttons">
           <h2>Equipe de advogados</h2>
           <h2>prontos para qualquer</h2>
-          <h2>situação</h2>
+          <h2>situasão</h2>
           <p>Obtenha aconselhamento jurídico de nossos advogados</p>
           <p>experientes</p>
         </div>
