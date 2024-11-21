@@ -2,8 +2,11 @@
 
 import React from 'react';
 import Navbar from './components/Navbar';
-import TextSection from './components/TextSection'; 
+import TextSection from './components/TextSection';
+import Carousel from './components/Carousel'; // Importe o carrossel
 import './App.css'; 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const App: React.FC = () => {
   return (
@@ -14,7 +17,7 @@ const App: React.FC = () => {
         <div className="text-above-buttons">
           <h2>Equipe de advogados</h2>
           <h2>prontos para qualquer</h2>
-          <h2>situasão</h2>
+          <h2>situação</h2>
           <p>Obtenha aconselhamento jurídico de nossos advogados</p>
           <p>experientes</p>
         </div>
@@ -26,10 +29,13 @@ const App: React.FC = () => {
 
       <TextSection /> 
 
+      {/* Adicione o componente de carrossel aqui */}
+      <Carousel />
+
       <footer>
-        <p>&copy; 2024 Advogados. Todos os direitos reservados.</p>
-        <p>Rua dos Advogados, 123, Cidade - Estado</p>
-        <p>Telefone: (XX) XXXX-XXXX | Email: contato@advocacia.com</p> 
+        <p>Rua dos Advogados, 123, Cascavel - PR</p>
+        <p>Telefone: (45) 9 9953-0236 | Email: contato@advocacia.com</p> 
+        <p>&copy; 2024 Advogados. Todos os direitos reservados. FAG.</p>
         <a href="https://cdn.forms-content-1.sg-form.com/6816f5c0-a077-11ef-abed-9699e2e7938e">assa</a>
       </footer>
     </div>
