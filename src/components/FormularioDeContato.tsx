@@ -1,52 +1,20 @@
-import React, { useState } from "react";
-import "./FormularioDeContato.css";
+import React from 'react';
+import './FormularioDeContato.css';
 
 const FormularioDeContato: React.FC = () => {
-  const [email, setEmail] = useState("");
-  const [mensagem, setMensagem] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("E-mail:", email);
-    console.log("Mensagem:", mensagem);
-
-    alert("Sua mensagem foi enviada com sucesso!");
-    setEmail("");
-    setMensagem("");
-  };
-
   return (
-    <div className="container-formulario">
-      <h2 className="titulo-formulario">Entre em Contato Conosco</h2>
-      <form className="formulario" onSubmit={handleSubmit}>
-        <div className="campo-formulario">
-          <label htmlFor="email" className="label-formulario">
-            Seu E-mail:
-          </label>
-          <input
-            type="email"
-            id="email"
-            className="input-formulario"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+    <div className="formulario-de-contato">
+      <h2>Fale com o Suporte</h2>
+      <form>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" placeholder="Digite seu email" />
         </div>
-        <div className="campo-formulario">
-          <label htmlFor="mensagem" className="label-formulario">
-            Sua Mensagem:
-          </label>
-          <textarea
-            id="mensagem"
-            className="textarea-formulario"
-            value={mensagem}
-            onChange={(e) => setMensagem(e.target.value)}
-            required
-          />
+        <div>
+          <label htmlFor="motivo">Motivo do Contato</label>
+          <textarea id="motivo" rows={4} placeholder="Explique o motivo do contato"></textarea>
         </div>
-        <button type="submit" className="botao-enviar">
-          Enviar
-        </button>
+        <button type="submit">Enviar</button>
       </form>
     </div>
   );

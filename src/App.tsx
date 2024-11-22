@@ -30,10 +30,10 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      
+      <TextSection /> 
 
       <Carousel />
-      <TextSection /> 
+      
       
       <PricingPlans />
       <FormularioDeContato />

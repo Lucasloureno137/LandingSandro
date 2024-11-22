@@ -1,65 +1,71 @@
-.container-formulario {
-    background-color: #f9f9f9;
-    padding: 30px;
-    margin: 0px 0; /* Remove as margens laterais */
-    border-radius: 0; /* Remove o arredondamento para ocupar toda a largura */
-    width: 95%; /* Garante que ocupe toda a largura */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
+/* FormularioDeContato.css */
+.formulario-de-contato {
+    width: 100%; /* O componente ocupa toda a largura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* O fundo se ajusta ao fundo da página */
+    padding: 20px; /* Adiciona um pequeno espaçamento interno */
+  }
   
-  .titulo-formulario {
-    font-size: 1.8rem;
-    color: #333;
+  .formulario-de-contato form {
+    width: 100%;
+    max-width: 600px; /* Largura máxima para o formulário */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+  }
+  
+  .formulario-de-contato h2 {
+    text-align: center;
+    color: #3b3b3b; /* Texto escuro para contraste */
     margin-bottom: 20px;
   }
   
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  .formulario-de-contato label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
   }
   
-  .campo-formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  .formulario-de-contato input,
+  .formulario-de-contato textarea {
+    width: 100%; /* Faz os campos ficarem com a mesma largura */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Inclui padding no cálculo da largura */
   }
   
-  .label-formulario {
-    font-size: 1rem;
-    margin-bottom: 5px;
-    color: #333;
+  .formulario-de-contato textarea {
+    resize: none; /* Impede redimensionamento manual */
+    height: 150px; /* Define a altura do textarea para um tamanho agradável */
   }
   
-  .input-formulario,
-  .textarea-formulario {
+  .formulario-de-contato input:focus,
+  .formulario-de-contato textarea:focus {
+    border-color: #007bff; /* Foco azul */
+    outline: none;
+  }
+  
+  .formulario-de-contato button {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  .textarea-formulario {
-    height: 100px;
-    resize: none;
-    color: 333;
-  }
-  
-  .botao-enviar {
-    background-color: #555;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #444;
     color: #fff;
-    padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
     transition: background-color 0.3s ease;
   }
   
-  .botao-enviar:hover {
-    background-color: #333;
+  .formulario-de-contato button:hover {
+    background-color: #353535; /* Azul mais escuro no hover */
   }
   
