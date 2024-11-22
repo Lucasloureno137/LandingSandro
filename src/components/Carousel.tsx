@@ -1,26 +1,27 @@
 import React from "react";
 import Slider from "react-slick";
-import "./Carousel.css"; // Importe o CSS personalizado
+import "./Carousel.css";
 
 // Importa as imagens diretamente
 import trabalhistaImg from "../assets/trabalhista.jpg";
 import civilImg from "../assets/civil.jpg";
 import penalImg from "../assets/penal.jpg";
 
+// Dados dos slides
 const slides = [
   {
     title: "Direito Trabalhista",
-    description: "Auxiliamos em casos de rescisões e direitos no ambiente de trabalho.",
+    description: "Orientação sobre direitos trabalhistas e rescisões contratuais.",
     image: trabalhistaImg,
   },
   {
     title: "Direito Civil",
-    description: "Especialistas em contratos, causas familiares e danos morais.",
+    description: "Atuação em causas familiares, contratuais e patrimoniais.",
     image: civilImg,
   },
   {
     title: "Direito Penal",
-    description: "Defesa técnica em processos criminais com ética e comprometimento.",
+    description: "Defesa em processos criminais com ética e excelência.",
     image: penalImg,
   },
 ];
@@ -41,9 +42,11 @@ const Carousel: React.FC = () => {
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="carousel-slide">
-            <img src={slide.image} alt={slide.title} />
-            <h3>{slide.title}</h3>
-            <p>{slide.description}</p>
+            <img src={slide.image} alt={slide.title} className="carousel-image" />
+            <div className="carousel-content">
+              <h3 className="carousel-title">{slide.title}</h3>
+              <p className="carousel-description">{slide.description}</p>
+            </div>
           </div>
         ))}
       </Slider>
