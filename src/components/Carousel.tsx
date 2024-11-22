@@ -1,22 +1,27 @@
 import React from "react";
 import Slider from "react-slick";
-import "./Carousel.css"; 
+import "./Carousel.css"; // Importe o CSS personalizado
+
+// Importa as imagens diretamente
+import trabalhistaImg from "../assets/trabalhista.jpg";
+import civilImg from "../assets/civil.jpg";
+import penalImg from "../assets/penal.jpg";
 
 const slides = [
   {
     title: "Direito Trabalhista",
     description: "Auxiliamos em casos de rescisões e direitos no ambiente de trabalho.",
-    image: "./assets/trabalhista.jpg",
+    image: trabalhistaImg,
   },
   {
     title: "Direito Civil",
     description: "Especialistas em contratos, causas familiares e danos morais.",
-    image: "/images/civil.jpg",
+    image: civilImg,
   },
   {
     title: "Direito Penal",
     description: "Defesa técnica em processos criminais com ética e comprometimento.",
-    image: "/images/penal.jpg",
+    image: penalImg,
   },
 ];
 

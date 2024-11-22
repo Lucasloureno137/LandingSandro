@@ -1,0 +1,68 @@
+.container-planos {
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+  }
+  
+  .titulo-planos {
+    font-size: 2rem;
+    color: rgb(77, 63, 52);
+    margin-bottom: 20px;
+  }
+  
+  .cartoes-planos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .cartao-plano {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .nome-plano {
+    font-size: 1.5rem;
+    color: rgb(161, 135, 110);
+    margin-bottom: 10px;
+  }
+  
+  .preco-plano {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .lista-beneficios {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  
+  .item-beneficio {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .botao-assinar {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-assinar:hover {
+    background-color: #333;
+  }
+  

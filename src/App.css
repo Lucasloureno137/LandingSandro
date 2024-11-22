@@ -9,6 +9,7 @@
   align-items: flex-start;
   overflow: hidden; 
   font-family: 'Montserrat', sans-serif;
+  background-color: #F9F9F9;
 }
 
 .container p {

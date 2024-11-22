@@ -3,7 +3,10 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import TextSection from './components/TextSection';
-import Carousel from './components/Carousel'; // Importe o carrossel
+import Carousel from './components/Carousel'; 
+import Footer from './components/Footer';
+import PricingPlans from "./components/PricingPlans";
+import FormularioDeContato from "./components/FormularioDeContato";
 import './App.css'; 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -27,17 +30,17 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <TextSection /> 
+      
 
-      {/* Adicione o componente de carrossel aqui */}
       <Carousel />
+      <TextSection /> 
+      
+      <PricingPlans />
+      <FormularioDeContato />
 
-      <footer>
-        <p>Rua dos Advogados, 123, Cascavel - PR</p>
-        <p>Telefone: (45) 9 9953-0236 | Email: contato@advocacia.com</p> 
-        <p>&copy; 2024 Advogados. Todos os direitos reservados. FAG.</p>
-        <a href="https://cdn.forms-content-1.sg-form.com/6816f5c0-a077-11ef-abed-9699e2e7938e">assa</a>
-      </footer>
+      <Footer />
+
+    
     </div>
   );
 };
